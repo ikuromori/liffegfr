@@ -5,7 +5,7 @@ $(function () {
         var creatinine = $('textarea[name="creatinine"]').val();
         var aged = $('textarea[name="aged"]').val();
         var sex = $('input[name="sex"]:checked').val();        
-        var msg = `クレアチニン:${creatinine}\n年齢:${aged}\n性別:${sex}`;
+        var msg = `クレアチニン:${creatinine}\n年齢:${aged}\n${sex}`;
         sendText(msg);
         return false;
     });
